@@ -9,9 +9,9 @@ const Header = () => {
     <S.HeaderGhost/>
     <S.HeaderWrapper>
       <S.HeaderContainer className="container">
-       <Logo />
+        <a href="/"><Logo /></a>
        <S.NavWrapper>
-        <S.NavLink>Company</S.NavLink>
+        <S.NavLink href="company">Company</S.NavLink>
         <S.NavButton>Contact Us</S.NavButton>
        </S.NavWrapper>
       </S.HeaderContainer>

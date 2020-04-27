@@ -13,6 +13,7 @@ export const HeaderWrapper = styled.header`
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 1;
 `
 
 export const HeaderContainer = styled.div`

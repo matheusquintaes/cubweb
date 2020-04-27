@@ -13,6 +13,12 @@ export const ButtonWrapper = styled.a`
 
  &.second {
     color: var(--main-color);
-    background-color: var(--bg-blue-light);
+    background-color: var(--bg-light-blue);
+ }
+
+ &.outline {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
  }
 `
