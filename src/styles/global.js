@@ -31,11 +31,13 @@ import { createGlobalStyle } from "styled-components"
     --gray10: #1D2B3D;
     --bg-black: #000;
     --bg-white: #fff;
-    --bg-blue-light: #DDEDFF;
+    --bg-light-blue: #DDEDFF;
   }
 
   a {
-    cursor : pointer
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
   }
   
   .container {
