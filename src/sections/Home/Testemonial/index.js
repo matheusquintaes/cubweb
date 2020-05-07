@@ -7,7 +7,7 @@ import * as S from './styled'
 const Testemonial = () => (
       
   <S.Testimonial className="section">
-    <div class="container">
+    <div className="container">
       <S.TestimonialCaseWrapper>
         <S.TestimonialText>
           <S.QuoteSvg/>

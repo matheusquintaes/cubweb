@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const HowWeWorkWrapper = styled.div`
   display:flex;
@@ -12,6 +13,15 @@ export const HowWeWorkItem = styled.div`
   flex-basis: 442px;
   margin-bottom: 48px;
   
+  ${media.lessThan('large')`
+    flex-basis: 46%;
+  `}
+
+  ${media.lessThan('medium')`
+    flex-basis: 100%;
+  `}
+
+
   svg {
     color: var(--main-color);
     width:24px;

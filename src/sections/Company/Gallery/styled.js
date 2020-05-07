@@ -14,6 +14,7 @@ export const GalleryWrapper = styled.section`
   position: relative;
   overflow: hidden;
   box-sizing: initial;
+  padding: 64px 0;
 
 `
 export const ImageWrapper = styled.div`

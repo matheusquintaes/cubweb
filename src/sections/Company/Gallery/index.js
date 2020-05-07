@@ -16,7 +16,7 @@ import office10 from '../../../images/office-10.png'
 
 const Gallery = () => (
   
-  <S.GalleryWrapper className="section">
+  <S.GalleryWrapper>
     <S.GalerryAnimmation>
       <S.ImageWrapper x="0" y="0">     <img alt="office" src={office1}></img></S.ImageWrapper>
       <S.ImageWrapper x="60" y="400">  <img alt="office" src={office2}></img></S.ImageWrapper>

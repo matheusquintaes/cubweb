@@ -1,16 +1,17 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const WorkWithUsWrapper = styled.section`
-
+  padding: 64px 0;
 `
 
 export const VacanciesWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 980px;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* width: 980px; */
+  margin: auto;
+  flex-wrap: wrap;  
 `
-
 
 export const VacancyItem = styled.div`
   border-radius: 10px;
@@ -22,6 +23,17 @@ export const VacancyItem = styled.div`
   h3{
     margin-bottom: 12px;
   }
+
+  
+  ${media.lessThan('large')`
+    flex-basis: 46%;
+    margin-bottom: 48px;
+  `}
+
+  ${media.lessThan('medium')`
+    flex-basis: 100%;
+  `}
+
 `
 
 export const PerksWrapper = styled.div`
@@ -29,6 +41,12 @@ export const PerksWrapper = styled.div`
     margin: 64px auto;
     display: flex;
     flex-wrap: wrap;
+
+    ${media.lessThan('medium')`
+      width: 100%;
+      justify-content: center;
+    `}
+
 `
 
 
@@ -37,6 +55,10 @@ export const PerkItem = styled.div`
   align-items: center;
   margin-bottom: 24px;
   flex-basis: 360px;
+
+  ${media.lessThan('medium')`
+    width: 100%;
+  `}
 
   svg {
     color: var(--main-color);

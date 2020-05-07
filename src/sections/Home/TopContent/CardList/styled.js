@@ -1,8 +1,11 @@
 import styled from "styled-components"
+import media from "styled-media-query"
+
 
 export const CardListWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 `
 
 export const CardItem = styled.div`
@@ -12,6 +15,18 @@ export const CardItem = styled.div`
   background: #6B5BE2;
   text-align: left;
   border-radius: 12px;
+  
+  ${media.lessThan('large')`
+      flex-basis: 47%;
+      min-height: inherit;
+      margin-bottom: 24px;
+  `
+  }
+  ${media.lessThan('medium')`
+    flex-basis: 100%;
+    `
+  }
+
 
   &:nth-child(2) {
     background: #2ECC71;
@@ -33,6 +48,12 @@ export const CardContent = styled.div`
   -webkit-box-pack: end;
   justify-content: flex-end;
   height: 100%;
+
+  ${media.lessThan('large')`
+    padding-top: 0;
+  `
+  }
+
 `
 
 export const CardTitle = styled.h3`

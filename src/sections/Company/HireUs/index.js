@@ -8,7 +8,7 @@ import * as S from './styled'
 
 const HireUs = () => (
 
-  <S.HireUs className="section">
+  <S.HireUs>
     <div className="container">
       <SectionTopContent 
         title="Hire us to help you build a great application"

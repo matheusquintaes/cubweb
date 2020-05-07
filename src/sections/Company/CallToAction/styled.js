@@ -6,9 +6,8 @@ export const CallToAction = styled.div`
   padding: 36px;
 `
 export const CallToActionWrapper = styled.div`
-  padding: 0 244px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   
   h3 {

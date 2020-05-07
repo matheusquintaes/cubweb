@@ -22,7 +22,7 @@ const Footer = () => {
           <li>106 Great South Road, Epsom Auckland, New Zealand</li>
         </ul>
       </div>
-      <div>
+      <S.CompanyWrapper>
         <ul>
           <li className="list-title">Company</li>
           <li>About Us</li>
@@ -30,8 +30,8 @@ const Footer = () => {
           <li>Carrers</li>
           <li>Contact</li>
         </ul>
-      </div>
-      <div>
+      </S.CompanyWrapper>
+      <S.FollowUsWrapper>
         <ul>
           <li className="list-title">Follow us</li>
           <li>Linkedin</li>
@@ -40,7 +40,7 @@ const Footer = () => {
           <li>Twitter</li>
           <li>Instagran</li>
         </ul>
-      </div>
+      </S.FollowUsWrapper>
 
     </S.FooterWrapper>
     </>

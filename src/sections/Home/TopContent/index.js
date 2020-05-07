@@ -16,8 +16,8 @@ const TopContent = () => (
         description="We help you elevate your business by taking your product to the next level through consult and the craft of design."
         />
       <S.ButtonsWrapper>
-        <li><Button text="Get in touch" link="/" type="primary"></Button></li>
-        <li><Button text="How we work" link="/" type="second"></Button></li>
+        <li><Button text="Join us" link="/" type="primary"></Button></li>
+        <li><Button text="See our work" link="/" type="second"></Button></li>
       </S.ButtonsWrapper>
     </S.TopContentWrapper>
     <CardList/>

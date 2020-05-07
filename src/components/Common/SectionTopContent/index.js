@@ -14,7 +14,7 @@ const SectionTopContent = ({
 )
 
 SectionTopContent.propTypes = {
-  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }
 

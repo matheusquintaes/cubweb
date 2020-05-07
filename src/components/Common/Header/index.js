@@ -1,6 +1,4 @@
 import React from "react"
-import Logo from '../../../assets/Logo.svg';
-
 import * as S from "./styled"
 
 const Header = () => {
@@ -9,10 +7,10 @@ const Header = () => {
     <S.HeaderGhost/>
     <S.HeaderWrapper>
       <S.HeaderContainer className="container">
-        <a href="/"><Logo /></a>
+        <a href="/"><S.LogoWrapper /><S.LogoMobileWrapper/></a>
        <S.NavWrapper>
-        <S.NavLink href="company">Company</S.NavLink>
-        <S.NavButton>Contact Us</S.NavButton>
+        <S.NavLink href="/company">Company</S.NavLink>
+        <S.NavButton href="/contact">Contact Us</S.NavButton>
        </S.NavWrapper>
       </S.HeaderContainer>
     </S.HeaderWrapper>

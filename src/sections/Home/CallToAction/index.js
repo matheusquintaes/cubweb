@@ -7,7 +7,7 @@ import * as S from './styled'
 const CallToAction = () => (
       
   <S.CallToAction>
-    <div class="container">
+    <div className="container">
       <S.CallToActionWrapper>
         <h3>Hire us to help you build a great application</h3>
         <Button text="Let’s make something great together" link="/" type="primary"></Button>

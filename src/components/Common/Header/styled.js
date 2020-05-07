@@ -1,6 +1,10 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
-export const HeaderGhost = styled.header`
+import Logo from '../../../assets/Logo.svg';
+import MobileLogo from '../../../assets/mobile.svg';
+
+export const HeaderGhost = styled.div`
   height: 72px;
   width: 100%;
   opacity: 0;
@@ -22,7 +26,36 @@ export const HeaderContainer = styled.div`
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    a {
+      font-weight: normal;
+    }
+
+ 
+
 `
+
+export const LogoWrapper = styled(Logo)`
+
+  display: block;
+  
+  ${media.lessThan('medium')`
+
+    display:none;
+
+  `}
+`
+
+export const LogoMobileWrapper = styled(MobileLogo)`
+
+  display: none;
+
+  ${media.lessThan('medium')`
+
+    display: block;
+  `}
+`
+
 
 export const NavWrapper = styled.nav`
   font-size: 14px;
@@ -36,5 +69,10 @@ export const NavButton = styled.a`
   border-radius: 5px;
   background-color: var(--main-color);
   color: white;
+
+  ${media.lessThan('large')`
+    font-size: 12px;
+  `}
+
 `
 

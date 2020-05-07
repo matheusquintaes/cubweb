@@ -4,9 +4,11 @@ import SectionTopContent from '../../../components/Common/SectionTopContent'
 
 import HowWeWorkList from './HowWeWorkList'
 
+import * as S from './styled'
+
 const HowWeWork = () => (
 
-      <div className="section">
+      <S.HowWeWorkWrapper>
         <div className="container">
             <SectionTopContent 
               title="How we work"
@@ -14,7 +16,7 @@ const HowWeWork = () => (
             />
             <HowWeWorkList/>
         </div>
-      </div>
+      </S.HowWeWorkWrapper>
     
 )
 

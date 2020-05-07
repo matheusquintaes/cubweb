@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components"
+import media from "styled-media-query"
+
 
  const GlobalStyles = createGlobalStyle`
 
@@ -15,6 +17,7 @@ import { createGlobalStyle } from "styled-components"
     color: var(--text-color);
     font-size: 16px;
     box-sizing: border-box;
+    margin: 0px auto;
     --title-color: #282C47;
     --text-color: #5B617C;
     --text-light: #A0AEC0;
@@ -48,11 +51,12 @@ import { createGlobalStyle } from "styled-components"
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-  }
 
-  .section{
-    padding: 100px 0 100px 0;
-  }  
+    ${media.lessThan('large')`
+      max-width: initial;
+    `
+    }
+  }
 
   p {
     font-size: 18px;

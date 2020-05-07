@@ -14,20 +14,20 @@ const WorkWithUs = () => (
         title="We are looking for our next colleague"
         description="We're always looking for like-minded people to join us. View our open positions below or pitch us why you think you'd be a great fit."
       />
-    </div>
+ 
 
     <S.VacanciesWrapper>
       <S.VacancyItem>
         <h3>Front-end Developer</h3>
-        <a>Read More -></a>
+        <a href="/">Read More -></a>
       </S.VacancyItem>
       <S.VacancyItem>
         <h3>UX/UI Designer</h3>
-        <a>Read More -></a>
+        <a href="/">Read More -></a>
       </S.VacancyItem>
       <S.VacancyItem>
         <h3>Project Manager</h3>
-        <a>Read More -></a>
+        <a href="/">Read More -></a>
       </S.VacancyItem>
     </S.VacanciesWrapper>
 
@@ -38,9 +38,9 @@ const WorkWithUs = () => (
       <S.PerkItem><AttachMoney/>Competitive compensation and benefits</S.PerkItem>
       <S.PerkItem><LocalCafe/>Freshly cooked food and free drinks</S.PerkItem>
     </S.PerksWrapper>
-
+    </div>
     <S.ApplyNow>
-      <a>Apply now -></a>
+      <a href="/">Apply now -></a>
     </S.ApplyNow>
   </S.WorkWithUsWrapper>
 
